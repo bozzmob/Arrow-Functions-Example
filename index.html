@@ -5,7 +5,16 @@
 	<script type="text/javascript">
 		var name = document.getElementById('name');
 		var age = document.getElementById('age');
+		var result = document.getElementById('result');
 		var votingRight = age => age > 18 ? true : false;
+		if(votingRight)
+		{
+			result.val = "Eligible To Vote";
+		}
+		else
+		{
+			result.val = "Not Eligible To Vote";
+		}
 	</script>
 </head>
 <body>
