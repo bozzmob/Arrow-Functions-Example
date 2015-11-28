@@ -3,18 +3,22 @@
 <head>
 	<title>Arrow Functions - Checking if AGE > 18</title>
 	<script type="text/javascript">
+	function validateAge () {
 		var name = document.getElementById('name');
 		var age = document.getElementById('age');
 		var result = document.getElementById('result');
-		var votingRight = age => age > 18 ? true : false;
+		var votingRight = (ageval) => ageval > 18 ? true : false;
+		votingRight(age);
+		console.log("votingRight = "+votingRight);
 		if(votingRight)
 		{
-			result.val = "Eligible To Vote";
+			result.innerHTML = "Eligible To Vote";
 		}
 		else
 		{
-			result.val = "Not Eligible To Vote";
-		}
+			result.innerHTML = "Not Eligible To Vote";
+		}	
+	}
 	</script>
 </head>
 <body>
@@ -22,7 +26,7 @@
 		<h1>Voting Eligibility</h1>
 		<input type="text" id="name" placeholder="Enter Name"><br><br>
 		<input type="text" id="age" placeholder="Enter Age"><br><br>
-		<button id="validateButton">Submit</button>
+		<button id="validateButton" onclick="validateAge()">Submit</button>
 		<div id="result"></div>
 	</center>
 </body>
