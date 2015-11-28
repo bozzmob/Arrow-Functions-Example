@@ -8,15 +8,14 @@
 		var age = document.getElementById('age');
 		var result = document.getElementById('result');
 		var votingRight = (ageval) => ageval > 18 ? true : false;
-		votingRight(age);
-		console.log("votingRight = "+votingRight);
-		if(votingRight)
+		console.log("votingRight = "+votingRight(age));
+		if(votingRight(age))
 		{
-			result.innerHTML = "Eligible To Vote";
+			result.innerHTML += "Eligible To Vote";
 		}
 		else
 		{
-			result.innerHTML = "Not Eligible To Vote";
+			result.innerHTML += "Not Eligible To Vote";
 		}	
 	}
 	</script>
