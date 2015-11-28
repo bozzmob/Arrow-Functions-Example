@@ -7,15 +7,17 @@
 		var name = document.getElementById('name');
 		var age = document.getElementById('age');
 		var result = document.getElementById('result');
-		var votingRight = (ageval) => ageval > 18 ? true : false;
-		console.log("votingRight = "+votingRight(age));
-		if(votingRight(age))
+		var votingRight = ageval => ageval > 18 ? 1 : 0;
+		var vr = votingRight(age);
+		if(vr)
 		{
-			result.innerHTML += "Eligible To Vote";
+			console.log("inside if "+vr);
+			result.innerHTML = name.value +"\t is Eligible To Vote";
 		}
 		else
 		{
-			result.innerHTML += "Not Eligible To Vote";
+			console.log("inside else "+vr);
+			result.innerHTML = name.value +"\t is Not Eligible To Vote";
 		}	
 	}
 	</script>
