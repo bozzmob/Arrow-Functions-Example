@@ -5,3 +5,12 @@
 		var votingRight = ageval => ageval > 18 ? name.value +" is Eligible To Vote" : name.value +" is Not Eligible To Vote";
 		result.innerHTML = votingRight(age.value);	
 	}
+
+	function emptyArrowFunc() {
+		var empty = () => {};
+		document.getElementById('emptyAF').innerHTML = "Empty Arrow Function returns "+empty;
+	}
+
+	function orderOfFunctions (argument) {
+		emptyArrowFunc();
+	}

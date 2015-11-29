@@ -4,13 +4,14 @@
 	<title>Arrow Functions - Checking if AGE > 18</title>
 	<script type="text/javascript" src="vote.js"></script>
 </head>
-<body>
+<body onload="orderOfFunctions();">
 	<center>
 		<h1>Voting Eligibility</h1>
 		<input type="text" id="name" placeholder="Enter Name"><br><br>
 		<input type="text" id="age" placeholder="Enter Age"><br><br>
 		<button id="validateButton" onclick="validateAge()">Submit</button>
 		<div id="result"></div>
+		<div id="emptyAF"></div>
 	</center>
 </body>
 </html>
