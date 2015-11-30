@@ -11,6 +11,11 @@
 		document.getElementById('emptyAF').innerHTML = "Empty Arrow Function returns "+empty;
 	}
 
-	function orderOfFunctions (argument) {
+	function orderOfFunctions () {
 		emptyArrowFunc();
+		document.getElementById('heading').innerHTML = setHeading();
+	}
+
+	function setHeading(){
+		return (() => "Voting Eligibility")();
 	}
