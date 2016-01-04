@@ -8,11 +8,20 @@ Usage-
 
 Arrow functions-
 
-- Empty Arrow Function
+1. Empty Arrow Function
+
 > It returns undefined
 
 ```
 	var empty = () => {};
+```
+
+2. Arrow Function which returns value
+
+> returns the string
+
+```
+(() => "Voting Eligibility")();
 ```
 
 ToDo-
