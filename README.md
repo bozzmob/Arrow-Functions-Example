@@ -1,8 +1,14 @@
-A repo to demonstrate Arrow Functions by examples
+An example that demonstrates Arrow Functions & its various uses-
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+Usage-
+
+> git clone https://github.com/bozzmob/Arrow-Functions-Example.git
+
+> Open *index.html* in your browser.
+
 
 ToDo-
-  ~~* onclick event for Example~~
-  ~~* Checkout Examples~~
   * Add more Details and Examples
+
+
+Thanks to Mozilla's MDN Webpage on [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
