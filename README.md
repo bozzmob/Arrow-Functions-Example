@@ -2,10 +2,18 @@ An example that demonstrates Arrow Functions & its various uses-
 
 Usage-
 
-> git clone https://github.com/bozzmob/Arrow-Functions-Example.git
+- git clone https://github.com/bozzmob/Arrow-Functions-Example.git
 
-> Open *index.html* in your browser.
+- Open *index.html* in your browser.
 
+Arrow functions-
+
+- Empty Arrow Function
+> It returns undefined
+
+```
+	var empty = () => {};
+```
 
 ToDo-
   * Add more Details and Examples
